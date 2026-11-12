@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="no" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediamukhtar.no | Sajid Mukhtar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#090a0f',
+                            900: '#0f1117',
+                            800: '#181b24',
+                            700: '#262a36',
+                        },
+                        accent: {
+                            DEFAULT: '#e2e8f0',
+                            gold: '#d4af37',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090a0f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262a36;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3a4052;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-950 text-zinc-300 font-sans antialiased selection:bg-zinc-700 selection:text-white">
+
+    <!-- Navigasjon -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-dark-950/80 backdrop-blur-md border-b border-zinc-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="group">
+                <span class="text-xl md:text-2xl font-light tracking-widest text-zinc-100 group-hover:text-white transition-colors">
+                    media<span class="font-semibold text-zinc-400 group-hover:text-zinc-200">mukhtar</span><span class="text-xs text-zinc-500 lowercase font-mono">.no</span>
+                </span>
+                <span class="block text-[10px] tracking-[0.25em] text-zinc-500 uppercase -mt-0.5">Sajid Mukhtar &middot; Foto &amp; Media</span>
+            </a>
+
+            <!-- Desktop lenker -->
+            <div class="hidden md:flex items-center space-x-10 text-sm tracking-wider uppercase text-zinc-400">
+                <a href="#galleri" class="hover:text-white transition-colors duration-200">Galleri</a>
+                <a href="#om" class="hover:text-white transition-colors duration-200">Om meg</a>
+                <a href="#visjon" class="hover:text-white transition-colors duration-200">Tilnærming</a>
+                <a href="#kontakt" class="px-4 py-2 border border-zinc-700 hover:border-zinc-300 text-zinc-200 hover:text-white text-xs tracking-widest uppercase transition-all duration-300">Kontakt</a>
+            </div>
+
+            <!-- Mobil menyknapp -->
+            <button id="menu-btn" class="md:hidden text-zinc-300 hover:text-white focus:outline-none p-2" aria-label="Åpne meny">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobil dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-b border-zinc-800 px-6 py-6 space-y-4 text-sm tracking-widest uppercase">
+            <a href="#galleri" class="block text-zinc-400 hover:text-white">Galleri</a>
+            <a href="#om" class="block text-zinc-400 hover:text-white">Om meg</a>
+            <a href="#visjon" class="block text-zinc-400 hover:text-white">Tilnærming</a>
+            <a href="#kontakt" class="block text-zinc-400 hover:text-white pt-2 border-t border-zinc-800">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero Seksjon -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+        <!-- Bakgrunnsbilde: zoomet inn, Sajid nærmere midten, fyrtårnet synlig til høyre -->
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <img src="images/46d8a512-08e8-4230-87f4-cae0d98da619.jpg"
+                 alt="Fotograf Sajid Mukhtar ved Lindesnes Fyr"
+                 class="w-full h-full object-cover opacity-75 contrast-105 transition-transform duration-700 md:scale-[1.22] md:translate-x-[5%]"
+                 style="object-position: 35% top; transform-origin: 40% top;">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-950/20 via-dark-950/40 to-dark-950"></div>
+            <div class="absolute inset-0 bg-radial from-transparent via-dark-950/20 to-dark-950/70"></div>
+        </div>
+
+        <!-- Tekst plassert i midten mellom Sajid og fyrtårnet -->
+        <div class="relative z-10 max-w-lg lg:max-w-xl text-center mx-auto space-y-5 px-6 py-8 sm:px-8 sm:py-10 rounded-2xl backdrop-blur-[3px] bg-dark-950/35 border border-white/10 shadow-2xl drop-shadow-lg">
+            <p class="text-xs uppercase tracking-[0.35em] text-zinc-300 font-medium">mediamukhtar.no &middot; Sajid Mukhtar</p>
+            <h1 class="text-3xl sm:text-5xl font-serif font-light text-zinc-100 tracking-tight leading-tight">
+                Kunsten å fange det <br class="hidden sm:inline" />
+                <span class="italic font-normal text-white">flyktige øyeblikket</span>
+            </h1>
+            <p class="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">
+                Et personlig vindu inn i landskap, stemningsfulle lysglimt og autentiske portretter. Gjennom kameralinsen søker jeg stillheten, dybden og historiene i motivene.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-3 sm:gap-4">
+                <a href="#galleri" class="px-6 sm:px-8 py-3 bg-zinc-100 hover:bg-white text-dark-950 font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-lg hover:shadow-zinc-500/10">
+                    Utforsk Galleriet
+                </a>
+                <a href="#om" class="px-6 sm:px-8 py-3 border border-zinc-500/60 hover:border-zinc-300 text-zinc-200 hover:text-white font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 backdrop-blur-sm bg-black/20">
+                    Om Fotografen
+                </a>
+            </div>
+        </div>
+
+        <!-- Pil ned -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-400 animate-bounce z-10">
+            <a href="#galleri" aria-label="Bla ned">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Galleri Seksjon -->
+    <section id="galleri" class="py-28 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Utvalgte verker</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-white tracking-tight">Galleri</h2>
+            <div class="w-12 h-px bg-zinc-700 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Filterknapper -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-14 text-xs tracking-widest uppercase">
+            <button class="filter-btn active px-4 py-2 text-white border-b-2 border-white transition-all duration-200" data-filter="all">Alle</button>
+            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="landskap">Landskap</button>
+            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="portrett">Portrett</button>
+        </div>
+
+        <!-- Bildegrid med Sajids egne fotografier -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Bilde 1: Besseggen -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/IMG_7271.jpg" 
+                         alt="Besseggen og Gjende i Jotunheimen" 
+                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Jotunheimen</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Besseggen over Gjende</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Høyfjellets dramatikk og farger</p>
+                </div>
+            </div>
+
+            <!-- Bilde 2: Lindesnes Fyr -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/46d8a512-08e8-4230-87f4-cae0d98da619.jpg" 
+                         alt="Lindesnes Fyr på svabergene" 
+                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Kyst</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Lindesnes Fyr</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Norges sydspiss i ettermiddagssol</p>
+                </div>
+            </div>
+
+            <!-- Bilde 3: Studio & Skaperglede -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC06961.JPG" 
+                         alt="Sajid Mukhtar i studioet" 
+                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Studio</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Skaperglede bak kamera</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Fokus på gode øyeblikk</p>
+                </div>
+            </div>
+
+            <!-- Bilde 4: Klassisk Studio Portrett -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC01701-2.jpg" 
+                         alt="Klassisk portrett Sajid Mukhtar" 
+                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Lyssetting</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Klassisk Studio Portrett</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Varmt og naturlig uttrykk</p>
+                </div>
+            </div>
+
+            <!-- Bilde 5: Offisielt Portrett -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC05239.JPG" 
+                         alt="Formelt portrett" 
+                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Naturlig dagslys</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Offisielt Portrett</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Drammen</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Om Meg Seksjon -->
+    <section id="om" class="py-28 bg-dark-900/60 border-y border-zinc-800/60 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <div class="lg:col-span-5 relative">
+                <div class="relative overflow-hidden bg-dark-800 border border-zinc-700/60 aspect-[4/5]">
+                    <img src="images/DSC01701-2.jpg" 
+                         alt="Fotograf Sajid Mukhtar" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <!-- Diskré dekorativ ramme -->
+                <div class="absolute -bottom-4 -right-4 w-full h-full border border-zinc-800 -z-10 hidden sm:block"></div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Bak kamera</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-white font-light leading-tight">
+                    Hei, jeg er <span class="font-normal italic">Sajid Mukhtar</span>
+                </h2>
+                <div class="w-12 h-px bg-zinc-700"></div>
+
+                <p class="text-zinc-300 leading-relaxed font-light">
+                    Hei! Jeg er en lidenskapelig fotograf som egentlig drømte om å leve av å ta bilder på heltid. Livet og karrieren tok meg i en litt annen retning, men gleden over å fange gode motiver har bare vokst. Utstyret er for lengst på plass, og min <strong class="text-white font-medium">Sony ZV-E1</strong> ligger alltid i bagen, klar til dyst.
+                </p>
+
+                <p class="text-zinc-300 leading-relaxed font-light">
+                    Den største fordelen for deg? Siden jeg ikke er avhengig av fotograferingen for å betale regningene, gjør jeg dette utelukkende av ren skaperglede. Det betyr at du får en engasjert, superglad fotograf til en billig penge. For meg handler det ikke om inntjening, men om å ha det gøy og levere bilder du blir skikkelig fornøyd med.
+                </p>
+
+                <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 border-t border-zinc-800/80">
+                    <div>
+                        <span class="block text-xl font-light text-white font-serif">Sony ZV-E1</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Hovedkamera</span>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-light text-white font-serif">Skaperglede</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Drivkraft</span>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-light text-white font-serif">Hyggelig pris</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Fordel for deg</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tilnærming / Filosofi -->
+    <section id="visjon" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Filosofi</span>
+            <h2 class="text-3xl font-serif text-white">Min tilnærming</h2>
+            <div class="w-12 h-px bg-zinc-700 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-zinc-700 transition-colors">
+                <span class="text-xs text-zinc-500 font-mono">01 /</span>
+                <h3 class="text-xl font-serif text-white">Naturlig lys</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed font-light">
+                    Jeg foretrekker å jobbe med det eksisterende lyset – enten det er den gylne timen før solnedgang, dramatisk tåke eller reflektert bylys.
+                </p>
+            </div>
+            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-zinc-700 transition-colors">
+                <span class="text-xs text-zinc-500 font-mono">02 /</span>
+                <h3 class="text-xl font-serif text-white">Minimalisme</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed font-light">
+                    Å fjerne det unødvendige fra komposisjonen for å gi hovedmotivet pusterom og styrke bildets emosjonelle kjerne.
+                </p>
+            </div>
+            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-zinc-700 transition-colors">
+                <span class="text-xs text-zinc-500 font-mono">03 /</span>
+                <h3 class="text-xl font-serif text-white">Autentisitet</h3>
+                <p class="text-sm text-zinc-400 leading-relaxed font-light">
+                    Uoppstilte øyeblikk og ekte uttrykk er alltid mer verdifulle enn det perfekte og konstruerte.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Seksjon -->
+    <section id="kontakt" class="py-24 bg-dark-900/40 border-t border-zinc-800/80 px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-8">
+            <span class="text-xs uppercase tracking-[0.35em] text-zinc-500">Ta kontakt</span>
+            <h2 class="text-3xl md:text-5xl font-serif text-white font-light">
+                Har du et prosjekt eller ønsker du en prat?
+            </h2>
+            <p class="text-zinc-400 font-light max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+                Selv om dette er en lidenskapshobby, er jeg alltid åpen for spennende samarbeid, portrettfotografering eller spørsmål om trykk og prints.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:kontakt@mediamukhtar.no" 
+                   class="px-8 py-3.5 bg-zinc-100 hover:bg-white text-dark-950 font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300">
+                    kontakt@mediamukhtar.no
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                   class="px-8 py-3.5 border border-zinc-700 hover:border-zinc-400 text-zinc-300 hover:text-white font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300">
+                    Følg på Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-zinc-900 text-center text-xs text-zinc-600 tracking-wider">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; <span id="year"></span> mediamukhtar.no &middot; Sajid Mukhtar. Alle rettigheter reservert.</p>
+            <p class="text-zinc-500">Fotografert med sjel &middot; Designet med minimalisme</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for fullskjermvisning av bilder -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-zinc-400 hover:text-white p-2 focus:outline-none" aria-label="Lukk bilde">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="max-w-5xl max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Forstørret bilde" class="max-w-full max-h-[80vh] object-contain shadow-2xl border border-zinc-800">
+            <p id="lightbox-caption" class="text-sm font-light text-zinc-300 mt-4 tracking-wide text-center"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript for interaktivitet (filter, mobilmeny, lightbox) -->
+    <script>
+        // Oppdater årstall i footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobilmeny toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lukk mobilmeny ved klikk på lenke
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Gallerifiltrering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('text-white', 'border-white');
+                    b.classList.add('text-zinc-400', 'border-transparent');
+                });
+                btn.classList.add('text-white', 'border-white');
+                btn.classList.remove('text-zinc-400', 'border-transparent');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox funksjonalitet
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.querySelector('h3')?.textContent || '';
+                const subtitle = item.querySelector('span')?.textContent || '';
+
+                lightboxImg.src = img.src;
+                lightboxCaption.textContent = `${title} — ${subtitle}`;
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+
+</html>
+
