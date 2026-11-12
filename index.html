@@ -145,19 +145,48 @@
         <!-- Filterknapper -->
         <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-14 text-xs tracking-widest uppercase">
             <button class="filter-btn active px-4 py-2 text-white border-b-2 border-white transition-all duration-200" data-filter="all">Alle</button>
-            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="landskap">Landskap</button>
-            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="portrett">Portrett</button>
+            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="landskap">Landskap &amp; Natur</button>
+            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="arkitektur">Arkitektur &amp; By</button>
+            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="portrett">Portrett &amp; Profil</button>
         </div>
 
         <!-- Bildegrid med Sajids egne fotografier -->
         <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <!-- Bilde 1: Besseggen -->
+            <!-- Bilde 1: Lindesnes Fyr (Nytt vidvinkel) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/20250723_194001.jpg" 
+                          alt="Lindesnes Fyr mot det åpne havet" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Kyst</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Lindesnes Fyr</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Norges sydspiss mot det åpne Nordsjøen</p>
+                </div>
+            </div>
+
+            <!-- Bilde 2: Under Snøhetta (Nytt arkitektur) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="arkitektur">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/20250722_200015.jpg" 
+                          alt="Undervannsrestauranten Under i Lindesnes av Snøhetta" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Arkitektur &middot; Snøhetta</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Under</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Verdenskjent undervannsarkitektur i Båly</p>
+                </div>
+            </div>
+
+            <!-- Bilde 3: Besseggen -->
             <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
                 <div class="aspect-[4/5] overflow-hidden">
                     <img src="images/IMG_7271.jpg" 
-                         alt="Besseggen og Gjende i Jotunheimen" 
-                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                          alt="Besseggen og Gjende i Jotunheimen" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Jotunheimen</span>
@@ -166,40 +195,82 @@
                 </div>
             </div>
 
-            <!-- Bilde 2: Lindesnes Fyr -->
+            <!-- Bilde 4: Wawel Katedral Kraków (Nytt arkitektur) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="arkitektur">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/20251005_135741.jpg" 
+                          alt="Wawel Katedral i Kraków" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Arkitektur &middot; Kraków</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Wawel-katedralen</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Gotiske spir og gyllen renessansekuppel</p>
+                </div>
+            </div>
+
+            <!-- Bilde 5: Skaperglede på Sydspissen (Nytt portrett/outdoor) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC06348.JPG" 
+                          alt="Sajid Mukhtar ved Lindesnes Fyr med armene hevet" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Ute i felt</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Skaperglede på Sydspissen</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Full energi og fotoglede ved havet</p>
+                </div>
+            </div>
+
+            <!-- Bilde 6: NTNU Hovedbygningen Trondheim (Nytt arkitektur) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="arkitektur">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/20250530_163904.jpg" 
+                          alt="NTNU Hovedbygningen i Trondheim" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Arkitektur &middot; Trondheim</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Hovedbygningen NTNU</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Monumental granittprakt på Gløshaugen</p>
+                </div>
+            </div>
+
+            <!-- Bilde 7: Kystsvaberg og hav (Nytt landskap) -->
             <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
                 <div class="aspect-[4/5] overflow-hidden">
-                    <img src="images/46d8a512-08e8-4230-87f4-cae0d98da619.jpg" 
-                         alt="Lindesnes Fyr på svabergene" 
-                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                    <img src="images/20250722_193754.jpg" 
+                          alt="Kystsvaberg mot rolig hav i kveldslys" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Kyst</span>
-                    <h3 class="text-lg font-serif text-white mt-1">Lindesnes Fyr</h3>
-                    <p class="text-xs text-zinc-400 mt-1">Norges sydspiss i ettermiddagssol</p>
+                    <h3 class="text-lg font-serif text-white mt-1">Kystlinjens ro</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Stille kveldslys og blanke svaberg</p>
                 </div>
             </div>
 
-            <!-- Bilde 3: Studio & Skaperglede -->
-            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+            <!-- Bilde 8: Elven Wisła i Kraków (Nytt bybilde) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="arkitektur">
                 <div class="aspect-[4/5] overflow-hidden">
-                    <img src="images/DSC06961.JPG" 
-                         alt="Sajid Mukhtar i studioet" 
-                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                    <img src="images/20251005_143726.jpg" 
+                          alt="Elven Wisla i Kraków med elvebåt og kloster" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Studio</span>
-                    <h3 class="text-lg font-serif text-white mt-1">Skaperglede bak kamera</h3>
-                    <p class="text-xs text-zinc-400 mt-1">Fokus på gode øyeblikk</p>
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">By &middot; Reise</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Langs elven Wisła</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Elvepromenaden ved Skałka i Kraków</p>
                 </div>
             </div>
 
-            <!-- Bilde 4: Klassisk Studio Portrett -->
+            <!-- Bilde 9: Klassisk Studio Portrett -->
             <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
                 <div class="aspect-[4/5] overflow-hidden">
                     <img src="images/DSC01701-2.jpg" 
-                         alt="Klassisk portrett Sajid Mukhtar" 
-                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                          alt="Klassisk portrett Sajid Mukhtar" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Lyssetting</span>
@@ -208,17 +279,45 @@
                 </div>
             </div>
 
-            <!-- Bilde 5: Offisielt Portrett -->
-            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+            <!-- Bilde 10: Slottshagene Wawel (Nytt arkitektur/historie) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="arkitektur">
                 <div class="aspect-[4/5] overflow-hidden">
-                    <img src="images/DSC05239.JPG" 
-                         alt="Formelt portrett" 
-                         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                    <img src="images/20251005_135757.jpg" 
+                          alt="Historiske ruiner og slottshager ved Wawel" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Naturlig dagslys</span>
-                    <h3 class="text-lg font-serif text-white mt-1">Offisielt Portrett</h3>
-                    <p class="text-xs text-zinc-400 mt-1">Drammen</p>
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Historie &middot; Arkitektur</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Slottshagene ved Wawel</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Middelalderruiner og frodig parkanlegg</p>
+                </div>
+            </div>
+
+            <!-- Bilde 11: Ryggvendt ved havet (Nytt landskap) -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="landskap">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC06341.JPG" 
+                          alt="Blikk mot horisonten ved Lindesnes Fyr" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Landskap &middot; Lindesnes</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Blikk mot horisonten</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Stillheten ute ved storhavet</p>
+                </div>
+            </div>
+
+            <!-- Bilde 12: Studio & Skaperglede -->
+            <div class="gallery-item group relative overflow-hidden bg-dark-900 border border-zinc-800/80 cursor-pointer" data-category="portrett">
+                <div class="aspect-[4/5] overflow-hidden">
+                    <img src="images/DSC06961.JPG" 
+                          alt="Sajid Mukhtar i studioet" 
+                          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-950/95 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[10px] tracking-widest uppercase text-zinc-400">Portrett &middot; Studio</span>
+                    <h3 class="text-lg font-serif text-white mt-1">Skaperglede bak kamera</h3>
+                    <p class="text-xs text-zinc-400 mt-1">Fokus på ekte øyeblikk</p>
                 </div>
             </div>
 
