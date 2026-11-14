@@ -59,32 +59,31 @@
 
     <!-- Navigasjon -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-dark-950/90 backdrop-blur-md border-b border-zinc-800/60 transition-all duration-300">
-        <!-- Lanseringstilbud Topplinje -->
-        <div class="bg-gradient-to-r from-amber-950/90 via-amber-900/50 to-amber-950/90 border-b border-amber-500/20 py-1.5 px-4 text-center text-xs">
-            <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap text-zinc-200">
-                <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">Lanseringstilbud</span>
-                <span class="text-xs">Heldagsfotografering av arrangement for kun <strong class="text-white font-semibold">kr 2 500,-</strong> i Østlandsområdet – inntekten kan gå til en god sak!</span>
-                <a href="#tilbud" class="underline hover:text-white font-medium ml-1 text-amber-200 text-xs">Sikre dato &rarr;</a>
+        <!-- Kompakt Lanseringstilbud Topplinje -->
+        <div class="bg-gradient-to-r from-amber-950/90 via-amber-900/50 to-amber-950/90 border-b border-amber-500/20 py-1.5 px-3 text-center text-xs">
+            <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 flex-wrap text-zinc-200">
+                <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">Tilbud</span>
+                <span class="text-xs">Heldagsfoto i Østlandet kun <strong class="text-white font-semibold">kr 2 500,-</strong></span>
+                <a href="#tilbud" class="underline hover:text-white font-medium ml-1 text-amber-200 text-xs">Se tilbud &rarr;</a>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
             <a href="#" class="group">
-                <span class="text-xl md:text-2xl font-light tracking-widest text-zinc-100 group-hover:text-white transition-colors">
+                <span class="text-lg sm:text-2xl font-light tracking-widest text-zinc-100 group-hover:text-white transition-colors">
                     media<span class="font-semibold text-zinc-400 group-hover:text-zinc-200">mukhtar</span><span class="text-xs text-zinc-500 lowercase font-mono">.no</span>
                 </span>
-                <span class="block text-[10px] tracking-[0.25em] text-zinc-500 uppercase -mt-0.5">Sajid Mukhtar &middot; Foto &amp; Media</span>
+                <span class="block text-[9px] sm:text-[10px] tracking-[0.25em] text-zinc-500 uppercase -mt-0.5">Sajid Mukhtar &middot; Foto &amp; Media</span>
             </a>
 
             <!-- Desktop lenker -->
-            <div class="hidden md:flex items-center space-x-7 text-sm tracking-wider uppercase text-zinc-400">
+            <div class="hidden md:flex items-center space-x-7 text-xs tracking-wider uppercase text-zinc-400">
                 <a href="#tilbud" class="text-amber-400 hover:text-amber-300 font-medium transition-colors duration-200 flex items-center gap-1.5">
                     <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
                     Tilbud kr 2500
                 </a>
                 <a href="#galleri" class="hover:text-white transition-colors duration-200">Galleri</a>
-                <a href="#om" class="hover:text-white transition-colors duration-200">Om meg</a>
-                <a href="#visjon" class="hover:text-white transition-colors duration-200">Tilnærming</a>
+                <a href="#om" class="hover:text-white transition-colors duration-200">Om meg &amp; løfter</a>
                 <a href="#samfunn" class="hover:text-emerald-400 text-emerald-300/90 transition-colors duration-200">Samfunnsbidrag</a>
                 <a href="#kontakt" class="px-4 py-2 border border-zinc-700 hover:border-zinc-300 text-zinc-200 hover:text-white text-xs tracking-widest uppercase transition-all duration-300">Kontakt</a>
             </div>
@@ -98,52 +97,51 @@
         </div>
 
         <!-- Mobil dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-b border-zinc-800 px-6 py-6 space-y-4 text-sm tracking-widest uppercase">
-            <a href="#tilbud" class="block text-amber-400 font-medium">🎉 Lanseringstilbud (kr 2 500,-)</a>
-            <a href="#galleri" class="block text-zinc-400 hover:text-white">Galleri</a>
-            <a href="#om" class="block text-zinc-400 hover:text-white">Om meg</a>
-            <a href="#visjon" class="block text-zinc-400 hover:text-white">Tilnærming</a>
-            <a href="#samfunn" class="block text-emerald-400 font-medium">🌱 Samfunnsbidrag (Falah For Alle)</a>
-            <a href="#kontakt" class="block text-zinc-400 hover:text-white pt-2 border-t border-zinc-800">Kontakt</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-b border-zinc-800 px-5 py-5 space-y-4 text-xs tracking-widest uppercase">
+            <a href="#tilbud" class="block text-amber-400 font-semibold py-1">🎉 Lanseringstilbud (kr 2 500,-)</a>
+            <a href="#galleri" class="block text-zinc-300 hover:text-white py-1">📸 Galleri</a>
+            <a href="#om" class="block text-zinc-300 hover:text-white py-1">👤 Om meg &amp; mine 3 løfter</a>
+            <a href="#samfunn" class="block text-emerald-400 font-medium py-1">🌱 Samfunnsbidrag (Falah For Alle)</a>
+            <a href="#kontakt" class="block text-zinc-300 hover:text-white pt-2 border-t border-zinc-800">✉️ Kontakt</a>
         </div>
     </nav>
 
     <!-- Hero Seksjon -->
-    <header class="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
-        <!-- Bakgrunnsbilde: zoomet inn, Sajid nærmere midten, fyrtårnet synlig til høyre -->
+    <header class="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 overflow-hidden">
+        <!-- Bakgrunnsbilde -->
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <img src="images/46d8a512-08e8-4230-87f4-cae0d98da619.jpg"
                  alt="Fotograf Sajid Mukhtar ved Lindesnes Fyr"
                  class="w-full h-full object-cover opacity-75 contrast-105 transition-transform duration-700 md:scale-[1.22] md:translate-x-[5%]"
                  style="object-position: 35% top; transform-origin: 40% top;">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark-950/20 via-dark-950/40 to-dark-950"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-950/25 via-dark-950/40 to-dark-950"></div>
             <div class="absolute inset-0 bg-radial from-transparent via-dark-950/20 to-dark-950/70"></div>
         </div>
 
-        <!-- Tekst plassert i midten mellom Sajid og fyrtårnet -->
-        <div class="relative z-10 max-w-lg lg:max-w-xl text-center mx-auto space-y-5 px-6 py-8 sm:px-8 sm:py-10 rounded-2xl backdrop-blur-[3px] bg-dark-950/35 border border-white/10 shadow-2xl drop-shadow-lg">
-            <p class="text-xs uppercase tracking-[0.35em] text-zinc-300 font-medium">mediamukhtar.no &middot; Sajid Mukhtar</p>
+        <!-- Tekstboks: Kompakt, poetisk og mobilvennlig -->
+        <div class="relative z-10 max-w-lg lg:max-w-xl text-center mx-auto space-y-4 px-5 py-7 sm:px-8 sm:py-9 rounded-2xl backdrop-blur-[3px] bg-dark-950/45 border border-white/10 shadow-2xl drop-shadow-lg">
+            <p class="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-zinc-300 font-medium">mediamukhtar.no &middot; Sajid Mukhtar</p>
             <h1 class="text-3xl sm:text-5xl font-serif font-light text-zinc-100 tracking-tight leading-tight">
                 Kunsten å fange det <br class="hidden sm:inline" />
                 <span class="italic font-normal text-white">flyktige øyeblikket</span>
             </h1>
-            <p class="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">
-                Et personlig vindu inn i landskap, stemningsfulle lysglimt og autentiske portretter. Gjennom kameralinsen søker jeg stillheten, dybden og historiene i motivene.
+            <p class="text-xs sm:text-sm text-zinc-300 font-light leading-relaxed max-w-md mx-auto">
+                Fotograf i Drammen og Østlandet. Autentiske øyeblikk, ekte stemning og minner levert lynraskt.
             </p>
-            <div class="pt-4 flex flex-wrap justify-center gap-3 sm:gap-4">
-                <a href="#galleri" class="px-6 sm:px-8 py-3 bg-zinc-100 hover:bg-white text-dark-950 font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-lg hover:shadow-zinc-500/10">
-                    Utforsk Galleriet
+            <div class="pt-2 flex flex-wrap justify-center gap-2.5 sm:gap-3">
+                <a href="#tilbud" class="px-5 sm:px-7 py-3 bg-amber-400 hover:bg-amber-300 text-dark-950 font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-lg">
+                    Lanseringstilbud kr 2500
                 </a>
-                <a href="#om" class="px-6 sm:px-8 py-3 border border-zinc-500/60 hover:border-zinc-300 text-zinc-200 hover:text-white font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 backdrop-blur-sm bg-black/20">
-                    Om Fotografen
+                <a href="#galleri" class="px-5 sm:px-7 py-3 border border-zinc-600 hover:border-zinc-300 text-zinc-200 hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-sm bg-black/20">
+                    Se Galleriet
                 </a>
             </div>
         </div>
 
         <!-- Pil ned -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-400 animate-bounce z-10">
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-zinc-400 animate-bounce z-10 hidden sm:block">
             <a href="#galleri" aria-label="Bla ned">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
             </a>
@@ -151,19 +149,19 @@
     </header>
 
     <!-- Galleri Seksjon -->
-    <section id="galleri" class="py-28 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Utvalgte verker</span>
-            <h2 class="text-3xl md:text-4xl font-serif text-white tracking-tight">Galleri</h2>
-            <div class="w-12 h-px bg-zinc-700 mx-auto mt-4"></div>
+    <section id="galleri" class="py-16 sm:py-24 px-4 sm:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12 space-y-2">
+            <span class="text-[11px] uppercase tracking-[0.3em] text-zinc-500 font-medium">Utvalgte verker</span>
+            <h2 class="text-2xl sm:text-4xl font-serif text-white tracking-tight">Galleri</h2>
+            <div class="w-10 h-px bg-zinc-700 mx-auto mt-2"></div>
         </div>
 
-        <!-- Filterknapper -->
-        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-14 text-xs tracking-widest uppercase">
-            <button class="filter-btn active px-4 py-2 text-white border-b-2 border-white transition-all duration-200" data-filter="all">Alle</button>
-            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="landskap">Landskap &amp; Natur</button>
-            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="arkitektur">Arkitektur &amp; By</button>
-            <button class="filter-btn px-4 py-2 text-zinc-400 hover:text-white border-b-2 border-transparent transition-all duration-200" data-filter="portrett">Portrett &amp; Profil</button>
+        <!-- Filterknapper: Touch-vennlige chips for mobil og desktop -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-8 sm:mb-12 text-xs tracking-wider uppercase no-scrollbar sm:justify-center -mx-4 px-4 sm:mx-0">
+            <button class="filter-btn active px-4 py-2 rounded-full bg-zinc-100 text-dark-950 font-medium whitespace-nowrap transition-all shadow" data-filter="all">Alle</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-dark-900 border border-zinc-800 text-zinc-400 hover:text-white whitespace-nowrap transition-all" data-filter="landskap">Landskap</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-dark-900 border border-zinc-800 text-zinc-400 hover:text-white whitespace-nowrap transition-all" data-filter="arkitektur">Arkitektur</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-dark-900 border border-zinc-800 text-zinc-400 hover:text-white whitespace-nowrap transition-all" data-filter="portrett">Portrett</button>
         </div>
 
         <!-- Bildegrid med Sajids egne fotografier -->
@@ -340,272 +338,207 @@
         </div>
     </section>
 
-    <!-- Om Meg Seksjon -->
-    <section id="om" class="py-28 bg-dark-900/60 border-y border-zinc-800/60 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <!-- Om Meg & Mine 3 Løfter (Slank & Mobilvennlig) -->
+    <section id="om" class="py-16 sm:py-24 bg-dark-900/60 border-y border-zinc-800/60 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto space-y-10 sm:space-y-12">
             
-            <div class="lg:col-span-5 relative">
-                <div class="relative overflow-hidden bg-dark-800 border border-zinc-700/60 aspect-[4/5]">
-                    <img src="images/DSC01701-2.jpg" 
-                         alt="Fotograf Sajid Mukhtar" 
-                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                <div class="lg:col-span-5 relative max-w-xs sm:max-w-sm mx-auto lg:max-w-none">
+                    <div class="relative overflow-hidden bg-dark-800 border border-zinc-700/60 aspect-[4/5] rounded-2xl shadow-xl">
+                        <img src="images/DSC01701-2.jpg" 
+                             alt="Fotograf Sajid Mukhtar" 
+                             class="w-full h-full object-cover">
+                    </div>
                 </div>
-                <!-- Diskré dekorativ ramme -->
-                <div class="absolute -bottom-4 -right-4 w-full h-full border border-zinc-800 -z-10 hidden sm:block"></div>
+
+                <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-zinc-500 font-medium">Bak kamera</span>
+                    <h2 class="text-2xl sm:text-4xl font-serif text-white font-light">
+                        Hei, jeg er <span class="font-normal italic text-white">Sajid Mukhtar</span>
+                    </h2>
+                    <p class="text-xs sm:text-base text-zinc-300 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
+                        Lidenskapelig fotograf i Drammen med <strong class="text-white font-medium">Sony ZV-E1</strong> i bagen. Jeg fotograferer av ren skaperglede – derfor får du personlig engasjement, topp kvalitet og en veldig hyggelig pris.
+                    </p>
+                    <p class="text-xs sm:text-sm text-amber-200/90 italic font-serif">
+                        «Min hovedjobb er å levere glede for øyeblikkene.»
+                    </p>
+                </div>
             </div>
 
-            <div class="lg:col-span-7 space-y-6">
-                <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Bak kamera</span>
-                <h2 class="text-3xl md:text-5xl font-serif text-white font-light leading-tight">
-                    Hei, jeg er <span class="font-normal italic">Sajid Mukhtar</span>
+            <!-- Mine 3 Løfter til deg -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-6 pt-2">
+                <div class="p-5 sm:p-6 bg-dark-950/80 border border-zinc-800/80 rounded-2xl space-y-2 hover:border-amber-500/40 transition-colors">
+                    <div class="text-[11px] text-amber-400 font-mono font-medium flex items-center gap-1.5">
+                        <span>⚡</span> 01 / RASK LEVERING
+                    </div>
+                    <h3 class="text-base sm:text-lg font-serif text-white">Minner mens de er ferske</h3>
+                    <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
+                        Ingen månedslang venting. Bildene leveres raskest mulig mens latteren og stemningen fortsatt huskes.
+                    </p>
+                </div>
+
+                <div class="p-5 sm:p-6 bg-dark-950/80 border border-zinc-800/80 rounded-2xl space-y-2 hover:border-amber-500/40 transition-colors">
+                    <div class="text-[11px] text-amber-400 font-mono font-medium flex items-center gap-1.5">
+                        <span>🎁</span> 02 / FULL ÅPENHET
+                    </div>
+                    <h3 class="text-base sm:text-lg font-serif text-white">Bildene er deres</h3>
+                    <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
+                        Dere får samtlige originalbilder fra dagen – pluss 50 håndplukkede bilder ferdig profesjonelt redigert.
+                    </p>
+                </div>
+
+                <div class="p-5 sm:p-6 bg-dark-950/80 border border-zinc-800/80 rounded-2xl space-y-2 hover:border-amber-500/40 transition-colors">
+                    <div class="text-[11px] text-amber-400 font-mono font-medium flex items-center gap-1.5">
+                        <span>🤝</span> 03 / PÅLITELIGHET
+                    </div>
+                    <h3 class="text-base sm:text-lg font-serif text-white">100 % oppmøtegaranti</h3>
+                    <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
+                        Gjelder ved ledig kapasitet. Når vi har inngått en avtale, stiller jeg alltid opp som avtalt.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bidrag til samfunnet: Kompakt & Høyverdig -->
+    <section id="samfunn" class="py-16 sm:py-24 px-4 sm:px-6 max-w-4xl mx-auto border-t border-zinc-800/80">
+        <div class="p-6 sm:p-10 rounded-3xl bg-gradient-to-b from-emerald-950/30 via-dark-900 to-dark-950 border border-emerald-500/30 shadow-2xl space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-[11px] tracking-wider uppercase font-mono w-fit">
+                    🌱 Samfunnsansvar &middot; Falah For Alle
+                </div>
+                <span class="text-xs text-zinc-400">Drammen &amp; Østlandet</span>
+            </div>
+
+            <div class="space-y-2">
+                <h2 class="text-2xl sm:text-4xl font-serif text-white font-light">
+                    Støttefotografering <span class="italic font-normal text-emerald-300">med mening</span>
                 </h2>
-                <div class="w-12 h-px bg-zinc-700"></div>
-
-                <p class="text-zinc-300 leading-relaxed font-light">
-                    Hei! Jeg er en lidenskapelig fotograf som egentlig drømte om å leve av å ta bilder på heltid. Livet og karrieren tok meg i en litt annen retning, men gleden over å fange gode motiver har bare vokst. Utstyret er for lengst på plass, og min <strong class="text-white font-medium">Sony ZV-E1</strong> ligger alltid i bagen, klar til dyst.
+                <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light max-w-2xl">
+                    Gjør en god gjerning samtidig som du får profesjonelle bilder! Hele honoraret for oppdraget kan innbetales 100 % uavkortet direkte til <strong>Falah For Alles</strong> veldedige arbeid via bedrifts-Vipps eller bankkonto.
                 </p>
+            </div>
 
-                <p class="text-zinc-300 leading-relaxed font-light">
-                    Den største fordelen for deg? Siden jeg ikke er avhengig av fotograferingen for å betale regningene, gjør jeg dette utelukkende av ren skaperglede. <strong class="text-white font-medium">Min hovedjobb er å levere glede for øyeblikkene.</strong> Det betyr en superglad, engasjert fotograf til en hyggelig pris – og 100&nbsp;% pålitelighet: Når jeg har sagt ja, så stiller jeg opp.
-                </p>
-
-                <!-- Tre kjerneprinsipper boks -->
-                <div class="p-6 rounded-xl bg-dark-950/70 border border-zinc-800 space-y-3">
-                    <div class="text-xs uppercase tracking-widest text-amber-400 font-medium">Mine to løfter til deg:</div>
-                    <p class="text-sm text-zinc-300 leading-relaxed">
-                        ⚡ <strong>Lynrask levering:</strong> Mange fotografer bruker måneder på å levere bildene – til folk nesten har glemt festen. Hos meg får du bildene raskest mulig mens minnene og stemningen er fersk.
-                    </p>
-                    <p class="text-sm text-zinc-300 leading-relaxed">
-                        🎁 <strong>Alle bildene er deres:</strong> Mange fotografer holder tilbake råfilene og gir kun fra seg et lite utvalg. Min filosofi: Jeg tar bildene, men de tilhører <em>dere</em>. Dere får alle bildene, og jeg finpusser og redigerer de 50 beste bildene i topp kvalitet.
-                    </p>
+            <!-- 3 raske fordeler for bedrift og familie -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm text-zinc-300 font-light">
+                <div class="p-3.5 rounded-xl bg-dark-950/70 border border-zinc-800/80 flex items-start gap-2.5">
+                    <span class="text-emerald-400 text-base">💚</span>
+                    <span><strong>100 % til saken:</strong> Betaling direkte til foreningen. Formell kvittering/faktura utstedes.</span>
                 </div>
-
-                <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 border-t border-zinc-800/80">
-                    <div>
-                        <span class="block text-xl font-light text-white font-serif">Sony ZV-E1</span>
-                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Hovedkamera</span>
-                    </div>
-                    <div>
-                        <span class="block text-xl font-light text-white font-serif">Skaperglede</span>
-                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Drivkraft</span>
-                    </div>
-                    <div>
-                        <span class="block text-xl font-light text-white font-serif">Hyggelig pris</span>
-                        <span class="text-xs text-zinc-500 uppercase tracking-wider">Fordel for deg</span>
-                    </div>
+                <div class="p-3.5 rounded-xl bg-dark-950/70 border border-zinc-800/80 flex items-start gap-2.5">
+                    <span class="text-emerald-400 text-base">🏢</span>
+                    <span><strong>For bedrifter:</strong> Oppdaterte ansattportretter og synlig samfunnsansvar (CSR).</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-dark-950/70 border border-zinc-800/80 flex items-start gap-2.5">
+                    <span class="text-emerald-400 text-base">👨‍👩‍👧</span>
+                    <span><strong>For familier:</strong> Nydelige minner fra din store dag med ren samvittighet.</span>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Tilnærming / Filosofi -->
-    <section id="visjon" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <span class="text-xs uppercase tracking-[0.3em] text-zinc-500">Filosofi</span>
-            <h2 class="text-3xl font-serif text-white">Min tilnærming</h2>
-            <div class="w-12 h-px bg-zinc-700 mx-auto mt-4"></div>
-            <p class="text-sm text-amber-200/90 italic font-serif pt-1">«Min hovedjobb er å levere glede for øyeblikkene.»</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-amber-500/40 transition-colors">
-                <span class="text-xs text-amber-400 font-mono font-medium">01 / RASK LEVERANSE</span>
-                <h3 class="text-xl font-serif text-white">Minner mens de er ferske</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Mange fotografer bruker uker og måneder på å levere – helt til gjestene nesten har glemt festen. Hos meg skal bildene være klare raskest mulig, mens latteren, klemmer og stemningen fortsatt er fersk i minnet.
-                </p>
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-zinc-800/80">
+                <span class="text-xs text-zinc-400 text-center sm:text-left">Inkluderer alle originalbilder + 50 profesjonelt redigert</span>
+                <a href="mailto:kontakt@mediamukhtar.no?subject=St%C3%B8ttefotografering%20for%20Falah%20For%20Alle" 
+                   class="w-full sm:w-auto px-6 py-3 bg-emerald-400 hover:bg-emerald-300 text-dark-950 font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow text-center rounded-lg">
+                    Book støttefotografering
+                </a>
             </div>
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-amber-500/40 transition-colors">
-                <span class="text-xs text-amber-400 font-mono font-medium">02 / FULL ÅPENHET</span>
-                <h3 class="text-xl font-serif text-white">Bildene tilhører dere</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Mange holder råmaterialet tilbake og gir kun fra seg et lite utvalg. Min filosofi: Jeg tar bildene, og det er <em>deres</em>. Dere får alle bildene, og jeg finpusser og redigerer de 50 beste bildene i topp kvalitet.
-                </p>
-            </div>
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 space-y-4 hover:border-amber-500/40 transition-colors">
-                <span class="text-xs text-amber-400 font-mono font-medium">03 / 100 % PÅLITELIGHET</span>
-                <h3 class="text-xl font-serif text-white">Når jeg sier ja, stiller jeg opp</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Tilbudene gjelder så lenge jeg har ledig kapasitet i kalenderen. Men når vi har inngått en avtale, kan du stole 100&nbsp;% på at jeg stiller opp med et smil og Sony ZV-E1 klar til dyst.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bidrag til samfunnet Seksjon -->
-    <section id="samfunn" class="py-28 px-6 max-w-6xl mx-auto border-t border-zinc-800/80">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs tracking-widest uppercase font-mono">
-                🌱 Samfunnsansvar &middot; Vinn-Vinn
-            </div>
-            <h2 class="text-3xl md:text-5xl font-serif text-white font-light">
-                Bidrag til samfunnet: <br />
-                <span class="italic font-normal text-emerald-300">Støttefotografering for Falah For Alle</span>
-            </h2>
-            <div class="w-12 h-px bg-zinc-700 mx-auto mt-4"></div>
-            <p class="text-sm sm:text-base text-zinc-300 max-w-xl mx-auto leading-relaxed pt-2 font-light">
-                Hvorfor ikke gjøre en god gjerning samtidig som du eller bedriften din får profesjonelle bilder? Ved å koble min fotoglede med et veldedig formål, går inntektene direkte til samfunnsnyttig arbeid i lokalsamfunnet.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <!-- Kort 1: 100% til saken -->
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 rounded-2xl space-y-4 hover:border-emerald-500/40 transition-colors">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <h3 class="text-xl font-serif text-white">100 % direkte til foreningen</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Betalingen går direkte til <strong>Falah For Alles</strong> offisielle bedriftskonto eller bedrifts-Vipps (ingenting går via min privatkonto). Foreningen utsteder formell kvittering eller faktura for <em>«Fototjenester / Sponsing»</em>.
-                </p>
-            </div>
-
-            <!-- Kort 2: Perfekt for bedrifter i Drammen & omegn -->
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 rounded-2xl space-y-4 hover:border-emerald-500/40 transition-colors">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                </div>
-                <h3 class="text-xl font-serif text-white">Ideelt for bedrifter &amp; CSR</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Trenger bedriften din oppdaterte ansattportretter, innhold til nettsiden eller dekning av et firmaevent? Få profesjonell kvalitet og vis samtidig lokalt samfunnsansvar dere stolt kan profilere utad.
-                </p>
-            </div>
-
-            <!-- Kort 3: Enkel og ryddig avtale -->
-            <div class="p-8 bg-dark-900 border border-zinc-800/80 rounded-2xl space-y-4 hover:border-emerald-500/40 transition-colors">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <h3 class="text-xl font-serif text-white">Lynhurtig &amp; med alle rettigheter</h3>
-                <p class="text-sm text-zinc-400 leading-relaxed font-light">
-                    Dere får samtlige bilder levert lynraskt + inntil 50 håndplukkede redigert. Eneste premiss er enkel kreditering (<em>«Foto: Sajid Mukhtar / mediamukhtar.no»</em>) og rett til å vise utvalgte referansebilder.
-                </p>
-            </div>
-        </div>
-
-        <!-- Banner-boks nederst i samfunnsseksjonen -->
-        <div class="p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-dark-900 to-emerald-950/40 border border-emerald-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="space-y-2 text-center md:text-left">
-                <span class="text-xs uppercase tracking-widest text-emerald-400 font-medium">Bli med på en god sak</span>
-                <h4 class="text-2xl font-serif text-white">Ønsker din bedrift eller familie støttefotografering?</h4>
-                <p class="text-sm text-zinc-400 font-light max-w-xl">
-                    Ta kontakt for en uforpliktende prat. Sammen finner vi en dato og skaper bilder som varer – til inntekt for Falah For Alles viktige samfunnsarbeid.
-                </p>
-            </div>
-            <a href="mailto:kontakt@mediamukhtar.no?subject=St%C3%B8ttefotografering%20for%20Falah%20For%20Alle&body=Hei%20Sajid!%0A%0AVi%20%C3%B8nsker%20%C3%A5%20h%C3%B8re%20mer%20om%20st%C3%B8ttefotografering%20for%20Falah%20For%20Alle.%0A%0AArrangement%20/%20Bedrift:%20%0A%C3%98nsket%20type%20fotografering:%20%0ASted%20i%20%C3%98stlandsomr%C3%A5det:%20%0AKontaktperson%20og%20tlf:%20%0A%0AMvh%20" 
-               class="px-8 py-3.5 bg-emerald-400 hover:bg-emerald-300 text-dark-950 font-semibold text-xs tracking-widest uppercase transition-all duration-300 shadow-lg hover:shadow-emerald-400/20 whitespace-nowrap shrink-0">
-                Book støttefotografering
-            </a>
         </div>
     </section>
 
     <!-- Lanseringstilbud Kampanjeseksjon -->
-    <section id="tilbud" class="py-28 px-6 relative overflow-hidden bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950 border-t border-zinc-800/80">
-        <!-- Bakgrunnsglød -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-amber-500/5 blur-[130px] pointer-events-none rounded-full"></div>
+    <section id="tilbud" class="py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950 border-t border-zinc-800/80">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-amber-500/5 blur-[120px] pointer-events-none rounded-full"></div>
 
-        <div class="max-w-4xl mx-auto relative z-10">
-            <div class="text-center space-y-3 mb-12">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/40 bg-amber-500/10 text-amber-300 text-xs tracking-widest uppercase font-mono">
-                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-                    Eksklusivt &middot; Lanseringstilbud
+        <div class="max-w-4xl mx-auto relative z-10 space-y-8">
+            <div class="text-center space-y-2">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/40 bg-amber-500/10 text-amber-300 text-[11px] tracking-wider uppercase font-mono">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                    Eksklusivt Lanseringstilbud
                 </div>
-                <h2 class="text-3xl md:text-5xl font-serif text-white font-light">
-                    Heldagsfotografering til <span class="italic font-normal text-amber-300">lanseringstilbud</span>
+                <h2 class="text-2xl sm:text-4xl font-serif text-white font-light">
+                    Heldagsfotografering for <span class="italic font-normal text-amber-300">kr 2 500,-</span>
                 </h2>
-                <p class="text-zinc-400 max-w-xl mx-auto text-sm sm:text-base font-light leading-relaxed">
-                    For å feire lanseringen av mediamukhtar.no og starte med å bidra til noe godt for samfunnet samtidig som jeg får finpusset mitt talent og bygget porteføljen, tilbyr jeg full heldagsdekning til en unik lanseringspris.
+                <p class="text-xs sm:text-sm text-zinc-400 max-w-lg mx-auto font-light">
+                    Full dekning av ditt arrangement i Østlandet. Inntekten kan gå uavkortet til en god sak!
                 </p>
             </div>
 
             <!-- Kampanjekort -->
-            <div class="p-8 sm:p-12 rounded-3xl bg-dark-900/90 border border-amber-500/30 shadow-2xl backdrop-blur-md relative overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="p-6 sm:p-10 rounded-3xl bg-dark-900/90 border border-amber-500/30 shadow-2xl backdrop-blur-md">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
                     
-                    <!-- Venstre kolonne: Fordeler -->
-                    <div class="md:col-span-7 space-y-6">
-                        <div class="space-y-1">
-                            <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-medium">Hva du får inkludert:</span>
-                            <h3 class="text-2xl font-serif text-white">Komplett heldagsdekning</h3>
-                        </div>
-
-                        <ul class="space-y-3.5 text-sm text-zinc-300 font-light">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>Heldagstilstedeværelse:</strong> Fanger alle store øyeblikk og stemningsfulle detaljer gjennom arrangementet med Sony ZV-E1.</span>
+                    <!-- Venstre: Korte kulepunkter -->
+                    <div class="md:col-span-7 space-y-4">
+                        <span class="text-xs uppercase tracking-wider text-amber-400 font-medium block">Alt dette er inkludert:</span>
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 font-light">
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-amber-400 text-sm">📸</span>
+                                <span><strong>Heldagstilstedeværelse:</strong> Full dekning med Sony ZV-E1.</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>⚡ Lynrask leveranse:</strong> Bildene leveres raskest mulig etter arrangementet – mens minnene og feststemningen fortsatt er rykende fersk!</span>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-amber-400 text-sm">⚡</span>
+                                <span><strong>Lynhurtig levering:</strong> Bildene klare raskt mens minnene er ferske.</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>🎁 Alle bildene er deres:</strong> Jeg tar bildene, og det er <em>deres</em>! Dere får alle originalbildene fra arrangementet – ingen hemmelighold eller begrensninger.</span>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-amber-400 text-sm">🎁</span>
+                                <span><strong>Alle bildene er dine:</strong> Alle originaler + 50 toppredigerte bilder.</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>✨ Topp 50 ferdig redigert:</strong> I tillegg håndplukker og finpusser jeg de 50 aller beste bildene i profesjonell toppkvalitet.</span>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-amber-400 text-sm">📍</span>
+                                <span><strong>Hele Østlandet:</strong> Drammen, Oslo, Asker, Bærum og omegn.</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>🤝 100 % oppmøtegaranti:</strong> Gjelder ved ledig kapasitet. Når jeg først har sagt ja, stiller jeg alltid opp.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>📍 Hele Østlandsområdet:</strong> Drammen, Oslo, Asker, Bærum, Kongsberg, Vestfold og omegn.</span>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-amber-400 text-sm">🤝</span>
+                                <span><strong>100 % garanti:</strong> Når jeg har sagt ja, stiller jeg alltid opp.</span>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Høyre kolonne: Pris og bestilling -->
-                    <div class="md:col-span-5 bg-dark-950/90 p-8 rounded-2xl border border-zinc-800/90 text-center space-y-5 shadow-inner">
-                        <span class="text-xs tracking-widest uppercase text-zinc-400">Lanseringstilbud</span>
+                    <!-- Høyre: Pris & CTA -->
+                    <div class="md:col-span-5 bg-dark-950/90 p-6 sm:p-8 rounded-2xl border border-zinc-800 text-center space-y-4 shadow-inner">
                         <div>
-                            <div class="text-4xl sm:text-5xl font-serif text-white font-medium tracking-tight">
-                                2 500 <span class="text-lg font-sans font-light text-zinc-400">kr</span>
+                            <span class="text-[11px] tracking-widest uppercase text-zinc-400 block">Lanseringspris</span>
+                            <div class="text-4xl sm:text-5xl font-serif text-white font-medium tracking-tight mt-1">
+                                2 500 <span class="text-base font-sans font-light text-zinc-400">kr</span>
                             </div>
-                            <span class="text-xs text-amber-400/90 block mt-1 font-medium">1 dags arrangement &middot; Ingen skjulte gebyrer</span>
-                        </div>
-                        
-                        <p class="text-xs text-zinc-400 leading-relaxed font-light">
-                            Jeg ønsker å bidra til noe godt for samfunnet samtidig som jeg får finpusset mitt talent og levert ekte glede for øyeblikkene.
-                        </p>
-                        <div class="px-3 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-xs text-center font-light">
-                            🌱 Hele beløpet kan betales direkte til <strong>Falah For Alle</strong> via Vipps eller bankkonto!
+                            <span class="text-[11px] text-amber-400/90 block mt-0.5">Ingen skjulte gebyrer</span>
                         </div>
 
-                        <div class="pt-2">
-                            <a href="mailto:kontakt@mediamukhtar.no?subject=Lanseringstilbud%20-%20Bestilling%20av%20heldagsfotografering&body=Hei%20Sajid!%0A%0AJeg%20%C3%B8nsker%20%C3%A5%20benytte%20meg%20av%20lanseringstilbudet%20p%C3%A5%20heldagsfotografering%20(kr%202%20500,-).%0A%0AArrangement-type:%20%0A%C3%98nsket%20dato:%20%0ASted%20i%20%C3%98stlandsomr%C3%A5det:%20%0ANavn%20og%20tlf:%20%0A%0AMvh%20" 
-                               class="block w-full py-3.5 bg-amber-400 hover:bg-amber-300 text-dark-950 font-semibold text-xs tracking-widest uppercase transition-all duration-300 shadow-lg hover:shadow-amber-400/20">
-                                Sikre din dato nå
-                            </a>
-                            <span class="text-[11px] text-zinc-500 block mt-2">Uforpliktende &middot; Først til mølla</span>
+                        <div class="px-3 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-[11px] font-light leading-relaxed">
+                            🌱 Beløpet kan betales direkte til <strong>Falah For Alle</strong> via Vipps eller bank!
                         </div>
+
+                        <a href="mailto:kontakt@mediamukhtar.no?subject=Lanseringstilbud%20-%20Bestilling%20av%20heldagsfotografering&body=Hei%20Sajid!%0A%0AJeg%20%C3%B8nsker%20%C3%A5%20benytte%20meg%20av%20lanseringstilbudet%20(kr%202%20500,-).%0A%0AArrangement:%20%0ADato:%20%0ASted:%20%0ATelefon:%20%0A%0AMvh%20" 
+                           class="block w-full py-3.5 bg-amber-400 hover:bg-amber-300 text-dark-950 font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-lg text-center rounded-lg">
+                            Sikre din dato nå
+                        </a>
+                        <span class="text-[10px] text-zinc-500 block">Uforpliktende &middot; Først til mølla</span>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kontakt Seksjon -->
-    <section id="kontakt" class="py-24 bg-dark-900/40 border-t border-zinc-800/80 px-6">
-        <div class="max-w-3xl mx-auto text-center space-y-8">
-            <span class="text-xs uppercase tracking-[0.35em] text-zinc-500">Ta kontakt</span>
-            <h2 class="text-3xl md:text-5xl font-serif text-white font-light">
-                Har du et prosjekt eller ønsker du en prat?
+    <!-- Kontakt Seksjon: Rask og tommelvennlig -->
+    <section id="kontakt" class="py-16 sm:py-24 bg-dark-900/40 border-t border-zinc-800/80 px-4 sm:px-6">
+        <div class="max-w-xl mx-auto text-center space-y-6">
+            <span class="text-[11px] uppercase tracking-[0.3em] text-zinc-500 font-medium">Ta kontakt</span>
+            <h2 class="text-2xl sm:text-4xl font-serif text-white font-light">
+                La oss ta en hyggelig prat
             </h2>
-            <p class="text-zinc-400 font-light max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-                Selv om dette er en lidenskapshobby, er jeg alltid åpen for spennende samarbeid, portrettfotografering eller spørsmål om trykk og prints.
+            <p class="text-xs sm:text-sm text-zinc-400 font-light leading-relaxed">
+                Har du et arrangement, behov for bedriftsfoto eller spørsmål om støttefotografering? Send meg en melding, så svarer jeg raskt!
             </p>
 
-            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div class="pt-2 flex flex-col sm:flex-row justify-center items-center gap-3">
                 <a href="mailto:kontakt@mediamukhtar.no" 
-                   class="px-8 py-3.5 bg-zinc-100 hover:bg-white text-dark-950 font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300">
+                   class="w-full sm:w-auto px-7 py-3.5 bg-zinc-100 hover:bg-white text-dark-950 font-medium text-xs tracking-wider uppercase transition-all duration-300 rounded-lg text-center shadow">
                     kontakt@mediamukhtar.no
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                   class="px-8 py-3.5 border border-zinc-700 hover:border-zinc-400 text-zinc-300 hover:text-white font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300">
+                   class="w-full sm:w-auto px-7 py-3.5 border border-zinc-700 hover:border-zinc-400 text-zinc-300 hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-300 rounded-lg text-center">
                     Følg på Instagram
                 </a>
             </div>
@@ -657,11 +590,11 @@
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => {
-                    b.classList.remove('text-white', 'border-white');
-                    b.classList.add('text-zinc-400', 'border-transparent');
+                    b.classList.remove('bg-zinc-100', 'text-dark-950', 'font-medium', 'shadow');
+                    b.classList.add('bg-dark-900', 'border', 'border-zinc-800', 'text-zinc-400');
                 });
-                btn.classList.add('text-white', 'border-white');
-                btn.classList.remove('text-zinc-400', 'border-transparent');
+                btn.classList.add('bg-zinc-100', 'text-dark-950', 'font-medium', 'shadow');
+                btn.classList.remove('bg-dark-900', 'border-zinc-800', 'text-zinc-400');
 
                 const filterValue = btn.getAttribute('data-filter');
 
